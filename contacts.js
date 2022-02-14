@@ -44,12 +44,6 @@ async function removeContact(contactId) {
           console.log('Contact Not Found');
           return;
       }
-    //   else {
-    //       const updatedContacts = contacts.filter(item => item.id !== contactId);
-    //       await writeContent(updatedContacts);
-    //       console.log('Contact deleted', deletedContact);
-    //       return deletedContact;
-    //   }
       const updatedContacts = contacts.filter(item => item.id !== contactId);
           await writeContent(updatedContacts);
           console.log('Contact deleted', deletedContact);
